@@ -1,0 +1,60 @@
+  
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $white-color;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    @media (min-width: $break-m) {
+      padding: 10px 30px;
+    }
+
+
+    .btn + .btn {
+      @media (min-width: $break-m){
+      margin-left: 10px;
+    }
+    }
+  }
+  
+  .default {
+    background-color: $color-base3;
+    &:hover {
+      color: $white-color;
+      background-color: $hover-light1;
+    }
+  }
+  
+  .error {
+    background-color: $background-color3;
+    &:hover {
+      color: $white-color;
+      background-color: $hover-light2;
+    }
+  }
+  
+  .info {
+    background-color: $background-color1;
+    &:hover {
+      color: $white-color;
+      background-color: $hover-light3;
+    }
+  }
+  
+  .success {
+    background-color: $background-color4;
+    &:hover {
+      color: $white-color;
+      background-color: $hover-light4;
+    }
+  }
+  
+  .warning {
+    background-color: $background-color2;
+    &:hover {
+    color: $white-color;
+    background-color: $hover-light5;
+  }
+  }
