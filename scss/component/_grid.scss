@@ -1,95 +1,73 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
 
-  
 .container {
-    padding: 0 10px;
-    @media (min-width: $break-m){
-    max-width: 1400px;
-    @include grid-img;
-    }
-
-    .centered{
-    @media (min-width: $break-m){
-    @include grid-img;
-    }
+  padding: 0 10px;
 }
-    
-    .row {
-    display: flex;
-    flex-direction: column;
-    padding: 1em 10px;
-    @media (min-width: $break-m){
-    flex-direction: row; 
-    }
-}
-  
-    [class^=col] {
-    margin-top: 10px;
-    flex-basis: 100%;
-    min-height: 25px;
-    padding: 10px;
-    border-radius: 5px;
-    @media (min-width: $break-m){
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-      }
-}
- 
-    [class^=col] + [class^=col] {
-    @media (min-width: $break-m){
-    margin-left: 10px;
-}  
-  }
 
-  @media (min-width: $break-m){
-    .col-1 {
-      flex-basis: 8.33%;
-    }
-    
-    .col-2 {
-      flex-basis: 16.67%;
-    }
-    
-    .col-3 {
-      flex-basis: 25.00%;
-    }
-    
-    .col-4 {
-      flex-basis: 33.33%;
-    }
-    
-    .col-5 {
-      flex-basis: 41.67%;
-    }
-    
-    .col-6 {
-      flex-basis: 50.00%;
-    }
-    
-    .col-7 {
-      flex-basis: 58.33%;
-    }
-    
-    .col-8 {
-      flex-basis: 66.67%;
-    }
-    
-    .col-9 {
-      flex-basis: 75.00%
-    }
-    
-    .col-10 {
-      flex-basis: 83.33%;
-    }
-    
-    .col-11 {
-      flex-basis: 91.67%;
-    }
-    
-    .col-12 {
-      flex-basis: 100%;
-    }  
-  }
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+}
 
+[class^=col] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.theme.col-1 {
+  background-color: $background-color1;
+}
+
+.theme.col-2 {
+  background-color: $background-color2;
+}
+
+.theme.col-3 {
+  background-color: $background-color5;
+}
+
+.theme.col-4 {
+  background-color: $background-color6;
+}
+
+.theme.col-5 {
+  background-color: $background-color7;
+}
+
+.theme.col-6 {
+  background-color: $background-color8;
+}
+
+.theme.col-7 {
+  background-color: $background-color9;
+}
+
+.theme.col-8 {
+  background-color: $background-color10;
+}
+
+.theme.col-9 {
+  background-color: $background-color3;
+}
+
+.theme.col-10 {
+  background-color:$background-color4;
+}
+
+.theme.col-11 {
+  background-color: $color-base3;
+}
+
+.theme.col-12 {
+  background-color: $background-color11;
+}
+
+.card {
+  flex-basis: 100%;
 }
